@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+        <nav class="navbar">
+        <div class="logo">Mi Portafolio</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        </nav>
+    
+
+    <main>
+        <section id="inicio" class="inicio">
+        <div class="inicio-content">
+            <h1>Hola, soy <span class="highlight">Mónica Lizeth</span> 👋🏼</h1>
+            <h2>Desarrolladora de software 👩🏽‍💻</h2>
+            <p>Me encanta construir soluciones digitales limpias, accesibles y que generen un impacto positivo.</p>
+            <div class="inicio-buttons">
+            <a href="#proyectos" class="btn">Ver proyectos</a>
+            <a href="#contacto" class="btn secondary">Contáctame</a>
+            </div>
+        </div>
+        </section>
+    </header>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre-mi-content">
+        <img src="./imgs/foto-perfil.jpeg" alt="Foto de perfil" class="perfil-img">
+        <div>
+          <p>
+            ¡Hola! Soy <span class="highlight">Mónica Lizeth</span>, una desarrolladora de software (en formación) con pasión por crear experiencias digitales que generen impacto positivo. 
+            Me encanta combinar la lógica con el diseño para construir soluciones intuitivas y funcionales.
+          </p>
+          <p>
+            Actualmente estoy enfocada en desarrollo Web con Java, aprendiendo constantemente y buscando colaborar en proyectos que me reten y me permitan crecer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><p>HTML5</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><p>CSS3</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"><p>Bootstrap</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><p>Git</p></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><p>Figma</p></div>
+      </div>   
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section class="education-section">
+      <h2 class="section-title">Educación</h2>
+
+      <!-- Título universitario -->
+      <h3 class="subsection-title">Título universitario</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="bi bi-mortarboard"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="degree">Ingeniera Industrial</h3>
+            <span class="date">2013 - 2017</span>
+            <h4 class="institution">Universidad de Antioquia</h4>
+            <p>Formación en optimización de procesos, gestión de la calidad y logística, con enfoque en la mejora continua y la eficiencia operativa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cursos y certificados -->
+      <h3 class="subsection-title">Cursos y certificaciones</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="bi bi-terminal"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="degree">Desarrolladora Junior Full-Stack/Java</h3>
+            <span class="date">2025 (cursando actualmente)</span>
+            <h4 class="institution">Bootcamp Generation Colombia</h4>
+            <p>
+              Formación en desarrollo Full-Stack con Java, especializada en la creación de aplicaciones web completas, integrando diseño front-end, lógica back-end y bases de datos.
+              <br>
+              <a href="https://www.linkedin.com/link-a-tu-certificado" target="_blank" class="cert-link">
+                Ver certificado
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="degree">QA + Automation</h3>
+            <span class="date">2023 · 393 hs teórico/prácticas</span>
+            <h4 class="institution">Beca Code Your Future – Globant University & Egg</h4>
+            <p>
+              Certificación en QA y Automatización con enfoque en testing automatizado, metodologías ágiles y mejores prácticas para garantizar la calidad en entornos de desarrollo de software.
+              <br>
+              <a href="https://www.linkedin.com/in/monicalizethcalvov-software-developer/details/certifications/1707348784575/single-media-viewer/?profileId=ACoAACXMCzkBtpillXnULpmeXwkY23Jmc4IJ0OU" target="_blank" class="cert-link">
+                Ver certificado
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <div class="timeline-content">
+            <h3 class="degree">Back-End – Oracle Next Education (ONE) F2 T5</h3>
+            <span class="date">2023 · 331 hs teórico/prácticas</span>
+            <h4 class="institution">Certificación Alura – Oracle Next Education Program</h4>
+            <p>
+              Formación especializada en desarrollo Back-End, con foco en tecnologías del lado del servidor, buenas prácticas de programación, y habilidades blandas orientadas al crecimiento profesional, la agilidad y el emprendimiento.
+              <br>
+              <a href="https://www.linkedin.com/in/monicalizethcalvov-software-developer/details/certifications/1707348442489/single-media-viewer/?profileId=ACoAACXMCzkBtpillXnULpmeXwkY23Jmc4IJ0OU" target="_blank" class="cert-link">
+                Ver certificado
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="proyectos">
+        <h2 class="text-center mb-5">Proyectos</h2>
+        <div class="row justify-content-center">
+          <!-- Tarjeta 1 -->
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Proyecto 1">
+                  <h5 class="text-center mt-2">Proyecto 1</h5>
+                </div>
+                <div class="flip-card-back">
+                  <h3 class="card-title text-center">Proyecto 1</h3>
+                  <p class="card-text">Descripción...</p>
+                  <a href="#" class="btn btn-light btn-sm me-2">GitHub</a>
+                  <a href="#" class="btn btn-light btn-sm">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Proyecto 2">
+                  <h5 class="text-center mt-2">Proyecto 2</h5>
+                </div>
+                <div class="flip-card-back">
+                  <h3 class="card-title text-center">Proyecto 2</h3>
+                  <p class="card-text">Descripción...</p>
+                  <a href="#" class="btn btn-light btn-sm me-2">GitHub</a>
+                  <a href="#" class="btn btn-light btn-sm">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 3 -->
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Proyecto 3">
+                  <h5 class="text-center mt-2">Proyecto 3</h5>
+                </div>
+                <div class="flip-card-back">
+                  <h3 class="card-title text-center">Proyecto 3</h3>
+                  <p class="card-text">Descripción...</p>
+                  <a href="#" class="btn btn-light btn-sm me-2">GitHub</a>
+                  <a href="#" class="btn btn-light btn-sm">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Tarjeta 4 -->
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Proyecto 4">
+                  <h5 class="text-center mt-2">Proyecto 4</h5>
+                </div>
+                <div class="flip-card-back">
+                  <h3 class="card-title text-center">Proyecto 4</h3>
+                  <p class="card-text">Descripción...</p>
+                  <a href="#" class="btn btn-light btn-sm me-2">GitHub</a>
+                  <a href="#" class="btn btn-light btn-sm">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 5 -->
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Proyecto 5">
+                  <h5 class="text-center mt-2">Proyecto 5</h5>
+                </div>
+                <div class="flip-card-back">
+                  <h3 class="card-title text-center">Proyecto 5</h3>
+                  <p class="card-text">Descripción...</p>
+                  <a href="#" class="btn btn-light btn-sm me-2">GitHub</a>
+                  <a href="#" class="btn btn-light btn-sm">Ver demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Formulario o formas de contactarme.</p>
+      <form action="mailto:tu-email@example.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

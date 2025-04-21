@@ -1,0 +1,546 @@
+:root {
+    --primary-color: #7e57c2;
+    --secondary-color: #b39ddb;
+    --text-color: #333;
+    --background-color: #fdfdfd;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-stack);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  
+  /* NUEVO: header con fondo y bordes redondeados */
+  header {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa, #ce93d8); /* 3 colores */
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* navbar ahora es parte del header */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; 
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .navbar-hidden {
+    transform: translateY(-100%);  /* Mueve el navbar fuera de la vista */
+    transition: transform 0.3s ease;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 1px solid #eee;
+  }
+  
+
+  .inicio {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+  }
+
+  .inicio h1,
+  .inicio h2,
+  .inicio p {
+    color: white;
+  }
+  
+  .inicio-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .inicio-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .inicio-content p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .inicio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* BOTONES UNIFICADOS */
+  .btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  /* color de palabras destacadas */
+  .highlight {
+    color: #ffe082;
+  }
+  
+  
+  .sobre-mi {
+    background-color: #faf5ff; /* tono muy suave de púrpura */
+    border-radius: 2rem;
+    margin: 2rem auto;
+    padding: 4rem 2rem;
+  }
+  
+  .sobre-mi h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  .sobre-mi-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .perfil-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+  }
+  
+  .skills {
+    background-color: #f3e5f5;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 2rem auto;
+  }
+  
+  .skills h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skill p {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  /*/////////////////////////////////////////////////////*/
+  .education-section {
+    /*max-width: 900px;
+    margin: 40px auto;*/
+    background-color: #faf5ff; /* igual que .sobre-mi */
+    border-radius: 2rem;       /* igual que .sobre-mi */
+    padding: 4rem 2rem;        /* igual que .sobre-mi */
+    /* Puedes dejar o quitar border-bottom si quieres separar visualmente */
+  }
+  
+  .section-title {
+    text-align: center;
+    color:  var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* --- NUEVO: Subtítulos para separar bloques --- */
+  .subsection-title {
+    font-size: 1.3rem;
+    color: #7c3aed;
+    margin: 32px 0 18px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 24px; /* Centra la línea con los iconos */
+    width: 4px;
+    height: 100%;
+    background: #e0e0e0;
+    z-index: 0;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre icono y tarjeta */
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-icon {
+    min-width: 48px;
+    min-height: 48px;
+    width: 48px;
+    height: 48px;
+    background: white;
+    color: #7c3aed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    border: 2.5px solid #7c3aed;
+    box-shadow: 0 2px 8px rgba(124,58,237,0.08);
+    transition:
+      background 0.4s,
+      color 0.4s,
+      border 0.4s,
+      transform 0.3s;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .timeline-item:hover .timeline-icon {
+    background: linear-gradient(135deg, #7c3aed 0%, #f3e8ff 100%);
+    color: #fff;
+    border-color: #7c3aed;
+    transform: scale(1.08) rotate(-8deg);
+  }
+  
+  .timeline-content {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 8px #ce93d8;
+    transition: 
+      transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+      box-shadow 0.3s;
+  }
+  
+  .timeline-item:hover .timeline-content {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(233,30,99,0.20);
+  }
+  
+  .degree {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+  }
+  
+  .date {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+  
+  .institution {
+    font-weight: bold;
+    margin: 10px 0 8px 0;
+    font-size: 1.05rem;
+  }
+  
+  /* --- NUEVO: Enlace a certificados --- */
+  .cert-link {
+    display: inline-flex;
+    align-items: center;
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-top: 6px;
+  }
+  
+  .cert-link i {
+    margin-left: 6px;
+    font-size: 1.1em;
+  }
+  
+  .cert-link:hover {
+    color: #e91e63;
+    text-decoration: underline;
+  }
+  
+ 
+/*/////////////////////////////////////////////////////*/
+
+
+
+
+  /* Estilos generales para flip card */
+.proyectos-section {
+  background-color: #faf5ff;
+  border-radius: 2rem;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(124,87,194,0.07);
+}
+
+.proyectos-section .section-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+.flipcards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  min-width: 260px;
+  max-width: 320px;
+  height: 370px;
+  perspective: 1000px;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(.4,2.08,.55,.44);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(124,87,194,0.10);
+  background: #fff;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.flip-card-front h5 {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #7e57c2 0%, #b39ddb 100%);
+  color: #fff;
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 20px rgba(124,87,194,0.12);
+}
+
+.flip-card-back h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+  color: #f3e5f5;
+  margin-bottom: 1rem;
+}
+
+.flip-card-back .btn {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 1.5px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.flip-card-back .btn:hover {
+  background-color: #fff;
+  color: #7e57c2;
+  border-color: #fff;
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #5e35b1;
+  }
+  
+  
+  /* Responsive en pantallas más grandes */
+  @media screen and  (min-width: 768px) {
+    .sobre-mi-content {
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .sobre-mi-content div {
+      flex: 1;
+    }
+  
+  
+    .timeline-left,
+    .timeline-right {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+  
+
+      .timeline {
+        padding-left: 0;
+      }
+      .timeline::before {
+        left: 12px;
+      }
+      .timeline-content {
+        margin-left: 16px;
+        padding: 18px 10px;
+      }
+      .timeline-icon {
+        min-width: 36px;
+        min-height: 36px;
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+      }
+
+      #proyectos .row:last-child {
+        justify-content: center !important;
+      }
+
+
+
+
+
+
+  }
+  
